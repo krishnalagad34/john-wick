@@ -175,3 +175,40 @@ body {
   font-size: 0.8rem;
   font-weight: bold;
 }
+
+/* Cookie Inspector Styles */
+.cookie-section {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px dashed var(--border-color);
+}
+
+.cookie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.cookie-item {
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--border-color);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+}
+
+.cookie-key {
+  font-size: 0.8rem;
+  color: var(--gold-accent);
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+}
+
+.cookie-val {
+  font-size: 0.9rem;
+  color: var(--text-main);
+  word-break: break-all;
+}
