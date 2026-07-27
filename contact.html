@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacts | John Wick</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="taskbar">
+    <a href="index.html" class="logo">JOHN WICK</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="assignments.html">Assignments</a></li>
+      <li><a href="trainings.html">Trainings</a></li>
+      <li><a href="bounty.html">Bounty</a></li>
+      <li><a href="contact.html">Contacts</a></li>
+    </ul>
+  </header>
+
+  <main class="container">
+    <h1 class="page-title">Continental Concierge & Marker Protocol</h1>
+    <p class="page-subtitle">Request services or honor blood oaths.</p>
+
+    <div class="card">
+      <form id="contactForm">
+        <div class="form-group">
+          <label for="name">Code Name / Identity</label>
+          <input type="text" id="name" required placeholder="e.g. Winston Scott">
+        </div>
+        <div class="form-group">
+          <label for="service">Required Service</label>
+          <select id="service">
+            <option>Sommelier (Tactical Equipment)</option>
+            <option>Tailor (Tactical Suit Fitting)</option>
+            <option>Cleaner Service (Dinner Reservation for 12)</option>
+            <option>Marker Oath Redemption</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message">Secure Message</label>
+          <textarea id="message" rows="5" required placeholder="Specify location and requirements..."></textarea>
+        </div>
+        <button type="submit" class="btn">Dispatch Message</button>
+      </form>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
